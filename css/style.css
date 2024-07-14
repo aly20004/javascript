@@ -1,0 +1,99 @@
+.sideBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 9999;
+    overflow: hidden;
+
+}
+
+.side_icon {
+    width: 70px;
+}
+
+.sideBar a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+    font-weight: 200;
+    font-size: 15px;
+    transform: translateY(40px);
+}
+
+.layer {
+    background-color: #f9f6f6ca;
+    z-index: 3;
+    transition: all 0.8s;
+    transform: translateY(100%);
+}
+
+.hov:hover .layer {
+    transform: translateY(0px);
+    cursor: pointer;
+}
+
+.form-control {
+    border-color: white;
+    color: azure;
+}
+
+.recipes {
+    border: 1px solid transparent;
+    background-color: #cff4fc;
+    color: black;
+    padding: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.tag {
+    background-color: #f8d7da;
+}
+
+.icon {
+    font-size: 50px;
+}
+
+.area_hov:hover {
+    cursor: pointer;
+}
+
+.trunk {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

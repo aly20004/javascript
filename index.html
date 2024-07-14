@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+
+<div id="sidebar" class="sideBar">
+
+    <div class="bg-black d-flex flex-column justify-content-between align-items-start py-4 px-3" id="leftSide">
+        <div class="d-flex flex-column justify-content-start align-items-start">
+            <a href="#search" id="search">Search</a>
+            <a href="#categories" id="categories">categories</a>
+            <a href="#area" id="area">Area</a>
+            <a href="#Ingredients" id="ingredients">Ingredients</a>
+            <a href="#contact" id="contact">Contact Us</a>
+        </div>
+        <div>
+            <ul class="list-unstyled d-flex gap-2">
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-solid fa-globe"></i></li>
+            </ul>
+            <p>Copyright Â© 2019 All Rights</p>
+        </div>
+
+    </div>
+    <div class="bg-white side_icon d-flex flex-column justify-content-between align-items-center py-3" id="leftSide2">
+        <img src="images/logo.png" alt="logo" class="w-75">
+        <button class="border-0 bg-transparent d-none" id="close"><i class="fa-solid fa-x fs-3"></i></button>
+        <button class=" border-0 bg-transparent" id="show"><i
+                class="fa-solid open-close-icon fa-2x fa-align-justify"></i></button>
+        <div class="text-center">
+            <i class="fa-solid fa-globe "></i>
+            <br>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </div>
+</div>
+
+<body class="bg-black">
+    <!-- Home Section-->
+    <div class="container d-none mt-3" id="search_section">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+                <input type="text" placeholder="Search By name" class="form-control bg-black text-white"
+                    id="searchByName">
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <input type="text" placeholder="Search By Filter" class="form-control bg-black text-white"
+                    id="searchByLetter">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3 text-white home_section">
+        <div class="row" id="rowdata">
+            <span class="loader"></span>
+        </div>
+    </div>
+
+    <!-- recepies Section-->
+    <div>
+        <div class="container mt-5 text-white d-none">
+            <div class="row">
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Search Section-->
+    <section id="search" class="mt-2 d-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <input type="text" placeholder="Search By name" class="form-control bg-black ">
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <input type="text" placeholder="Search By Filter" class="form-control bg-black " maxlength="1">
+                </div>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 py-2">
+                    <div class="inner rounded position-relative overflow-hidden hov">
+                        <div
+                            class="position-absolute top-0 end-0 bottom-0 start-0 layer d-flex justify-content-start align-items-center">
+                            <h3 class="ms-2">sochi</h3>
+                        </div>
+                        <img src="images/hero.jpg" alt="main dish" class="w-100">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container mt-5 d-none" id="submit_section">
+        <div class="inner p-3 d-flex flex-column align-items-center justify-content-center gap-2 mt-5">
+            <div class="d-flex justify-content-center align-items-center mb-2 gap-4">
+                <div>
+                    <input type="text" class="form-control bg-white text-black" placeholder="enter your name">
+                    <div class="alert alert-danger mt-2 d-none" role="alert">
+                        please enter valid name
+                    </div>
+                </div>
+                <div>
+                    <input type="email" class="form-control bg-white text-black" placeholder="enter your email">
+                    <div class="alert alert-danger mt-2 d-none" role="alert">
+                        please enter valid email
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center align-items-center mb-2 gap-4">
+                <div>
+                    <input type="number" class="form-control bg-white text-black" placeholder="enter your phone">
+                    <div class="alert alert-danger mt-2 d-none" role="alert">
+                        please enter valid phone
+                    </div>
+                </div>
+                <div>
+                    <input type="number" class="form-control bg-white text-black" placeholder="enter your age">
+                    <div class="alert alert-danger mt-2 d-none" role="alert">
+                        please enter valid age
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-4">
+                <div>
+                    <input type="password" class="form-control bg-white text-black" placeholder="enter your Password">
+                    <div class="alert alert-danger mt-2 d-none" role="alert">
+                        please enter valid password
+                    </div>
+                </div>
+                <div>
+                    <input type="password" class="form-control bg-white text-black" placeholder="rePassword">
+                    <div class="alert alert-danger mt-2 d-none " role="alert">
+                        password not matched
+                    </div>
+                </div>
+
+            </div>
+            <button class="btn btn btn-outline-danger text-center">Submit</button>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
